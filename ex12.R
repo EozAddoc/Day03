@@ -25,7 +25,7 @@ ventes <- data.frame (
 
 ventes$Total = ventes$Quantite * ventes$Prix
 ventes
-ggplot(data = ventes, aes(x = Produit, y = Total, fill = Produit)) +
+ggplot(data = ventes,  aes(x = Produit, y = Total, fill = Produit)) +
   geom_bar(stat = "identity", show.legend = FALSE) +
   labs(
     title = "Totaux des ventes par produit",

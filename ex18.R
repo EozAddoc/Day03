@@ -23,7 +23,7 @@ moyenne_salaire = summarise(
   group_by(employes, Departement),
   MoyenneSalaire = mean(Salaire)
 )
-sorted_employes_dataFrame <- arrange(employes, Salaire)
+sorted_employes_dataFrame <- arrange(employes, desc(Salaire))
 
 workersIT
 moyenne_salaire
